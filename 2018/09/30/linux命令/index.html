@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="从终端上传文件到服务器1rz 安装文件1rpm -ivh /安装路径/ 查看内部命令的帮助1234help 内部命令列表enable cmd 启用内部命令enable -n cmd禁用内部命令enable -n 查看所有禁用的内部命令 执行help命令会直接显示内部命令的列表，禁用的命令前会用*表示出来">
+<meta name="description" content="从终端上传文件到服务器1rz 安装文件1rpm -ivh /安装路径/ 查看内部命令的帮助1234help 内部命令列表enable cmd 启用内部命令enable -n cmd禁用内部命令enable -n 查看所有禁用的内部命令 执行help命令会直接显示内部命令的列表，禁用的命令前会用*表示出来 判断是外部命令还是内部命令1type 命令名称 -a 列出所有内部命令和外部命令列表 查询外部">
 <meta name="keywords" content="linux命令">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux命令">
 <meta property="og:url" content="http://yoursite.com/2018/09/30/linux命令/index.html">
 <meta property="og:site_name" content="朱俊成的博客">
-<meta property="og:description" content="从终端上传文件到服务器1rz 安装文件1rpm -ivh /安装路径/ 查看内部命令的帮助1234help 内部命令列表enable cmd 启用内部命令enable -n cmd禁用内部命令enable -n 查看所有禁用的内部命令 执行help命令会直接显示内部命令的列表，禁用的命令前会用*表示出来">
+<meta property="og:description" content="从终端上传文件到服务器1rz 安装文件1rpm -ivh /安装路径/ 查看内部命令的帮助1234help 内部命令列表enable cmd 启用内部命令enable -n cmd禁用内部命令enable -n 查看所有禁用的内部命令 执行help命令会直接显示内部命令的列表，禁用的命令前会用*表示出来 判断是外部命令还是内部命令1type 命令名称 -a 列出所有内部命令和外部命令列表 查询外部">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-30T13:10:55.926Z">
+<meta property="og:updated_time" content="2018-10-01T04:46:41.744Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux命令">
-<meta name="twitter:description" content="从终端上传文件到服务器1rz 安装文件1rpm -ivh /安装路径/ 查看内部命令的帮助1234help 内部命令列表enable cmd 启用内部命令enable -n cmd禁用内部命令enable -n 查看所有禁用的内部命令 执行help命令会直接显示内部命令的列表，禁用的命令前会用*表示出来">
+<meta name="twitter:description" content="从终端上传文件到服务器1rz 安装文件1rpm -ivh /安装路径/ 查看内部命令的帮助1234help 内部命令列表enable cmd 启用内部命令enable -n cmd禁用内部命令enable -n 查看所有禁用的内部命令 执行help命令会直接显示内部命令的列表，禁用的命令前会用*表示出来 判断是外部命令还是内部命令1type 命令名称 -a 列出所有内部命令和外部命令列表 查询外部">
 
 
 
@@ -366,7 +366,13 @@
         <p>从终端上传文件到服务器<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rz</span><br></pre></td></tr></table></figure></p>
 <p>安装文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh /安装路径/</span><br></pre></td></tr></table></figure></p>
 <p>查看内部命令的帮助<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">help</span> 内部命令列表</span><br><span class="line"><span class="built_in">enable</span> cmd 启用内部命令</span><br><span class="line"><span class="built_in">enable</span> -n cmd禁用内部命令</span><br><span class="line"><span class="built_in">enable</span> -n 查看所有禁用的内部命令</span><br></pre></td></tr></table></figure></p>
-<p>执行<code>help</code>命令会直接显示内部命令的列表，禁用的命令前会用*表示出来</p>
+<p>执行<code>help</code>命令会直接显示内部命令的列表，禁用的命令前会用<code>*</code>表示出来</p>
+<p>判断是外部命令还是内部命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span> 命令名称</span><br></pre></td></tr></table></figure></p>
+<p>-a 列出所有内部命令和外部命令列表</p>
+<p>查询外部命令路径<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">which</span> 命令名称</span><br></pre></td></tr></table></figure></p>
+<p>查询外部命令和文档路径<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whereis 命令名称</span><br></pre></td></tr></table></figure></p>
+<p>-a<br>–skip-alias</p>
+<p>查询缓存，缓存里命令优先执行<br>hash</p>
 
       
     </div>
@@ -406,6 +412,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/01/shell预定义变量/" rel="prev" title="shell预定义变量">
+                shell预定义变量 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -477,7 +487,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -488,7 +498,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -499,7 +509,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
