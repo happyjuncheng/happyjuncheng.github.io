@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="从终端上传文件到服务器1rz 安装文件1rpm -ivh /安装路径/ 查看内部命令的帮助1234help 内部命令列表enable cmd 启用内部命令enable -n cmd禁用内部命令enable -n 查看所有禁用的内部命令 执行help命令会直接显示内部命令的列表，禁用的命令前会用*表示出来 判断是外部命令还是内部命令1type 命令名称 -a 列出所有内部命令和外部命令列表 查询外部">
+<meta name="description" content="环境变量$SHELL  当前使用的shell$PS1  命令提示符prompt  提示符颜色修改          \e \033 \u 当前用户   \h 主机名称简称 \H 主机名   \w 当前工作目录 \W 当前工作目录基名   \t 24小时时间格式 \T 12小时时间格式   ! 命令历史数 # 开机后命令历史数    配置文件/etc/shells  #当前系统使用的所有shell">
 <meta name="keywords" content="linux命令">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux命令">
 <meta property="og:url" content="http://yoursite.com/2018/09/30/linux命令/index.html">
 <meta property="og:site_name" content="朱俊成的博客">
-<meta property="og:description" content="从终端上传文件到服务器1rz 安装文件1rpm -ivh /安装路径/ 查看内部命令的帮助1234help 内部命令列表enable cmd 启用内部命令enable -n cmd禁用内部命令enable -n 查看所有禁用的内部命令 执行help命令会直接显示内部命令的列表，禁用的命令前会用*表示出来 判断是外部命令还是内部命令1type 命令名称 -a 列出所有内部命令和外部命令列表 查询外部">
+<meta property="og:description" content="环境变量$SHELL  当前使用的shell$PS1  命令提示符prompt  提示符颜色修改          \e \033 \u 当前用户   \h 主机名称简称 \H 主机名   \w 当前工作目录 \W 当前工作目录基名   \t 24小时时间格式 \T 12小时时间格式   ! 命令历史数 # 开机后命令历史数    配置文件/etc/shells  #当前系统使用的所有shell">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-01T04:46:41.744Z">
+<meta property="og:updated_time" content="2018-10-08T11:47:08.484Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux命令">
-<meta name="twitter:description" content="从终端上传文件到服务器1rz 安装文件1rpm -ivh /安装路径/ 查看内部命令的帮助1234help 内部命令列表enable cmd 启用内部命令enable -n cmd禁用内部命令enable -n 查看所有禁用的内部命令 执行help命令会直接显示内部命令的列表，禁用的命令前会用*表示出来 判断是外部命令还是内部命令1type 命令名称 -a 列出所有内部命令和外部命令列表 查询外部">
+<meta name="twitter:description" content="环境变量$SHELL  当前使用的shell$PS1  命令提示符prompt  提示符颜色修改          \e \033 \u 当前用户   \h 主机名称简称 \H 主机名   \w 当前工作目录 \W 当前工作目录基名   \t 24小时时间格式 \T 12小时时间格式   ! 命令历史数 # 开机后命令历史数    配置文件/etc/shells  #当前系统使用的所有shell">
 
 
 
@@ -363,9 +363,74 @@
       
 
       
-        <p>从终端上传文件到服务器<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rz</span><br></pre></td></tr></table></figure></p>
-<p>安装文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh /安装路径/</span><br></pre></td></tr></table></figure></p>
-<p>查看内部命令的帮助<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">help</span> 内部命令列表</span><br><span class="line"><span class="built_in">enable</span> cmd 启用内部命令</span><br><span class="line"><span class="built_in">enable</span> -n cmd禁用内部命令</span><br><span class="line"><span class="built_in">enable</span> -n 查看所有禁用的内部命令</span><br></pre></td></tr></table></figure></p>
+        <h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><p><code>$SHELL</code>  当前使用的shell<br><code>$PS1</code>  命令提示符prompt  <a href="2018/09/30/更改echo命令输出的字符串颜色/">提示符颜色修改</a></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\e \033</td>
+<td>\u 当前用户</td>
+</tr>
+<tr>
+<td>\h 主机名称简称</td>
+<td>\H 主机名</td>
+</tr>
+<tr>
+<td>\w 当前工作目录</td>
+<td>\W 当前工作目录基名</td>
+</tr>
+<tr>
+<td>\t 24小时时间格式</td>
+<td>\T 12小时时间格式</td>
+</tr>
+<tr>
+<td>! 命令历史数</td>
+<td># 开机后命令历史数</td>
+</tr>
+</tbody>
+</table>
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p><code>/etc/shells</code>  #当前系统使用的所有shell</p>
+<h2 id="用户操作"><a href="#用户操作" class="headerlink" title="用户操作"></a>用户操作</h2><ul>
+<li><p>创建用户</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd me</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除用户</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">userdel -r me  <span class="comment">#省略-r则表示不删除家目录和邮件目录</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看用户所属组</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id me  <span class="comment">#省略用户名则表示当前用户</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="组操作"><a href="#组操作" class="headerlink" title="组操作"></a>组操作</h2><ul>
+<li><p>创建组</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd family</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除组</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupdel family</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="组成员操作"><a href="#组成员操作" class="headerlink" title="组成员操作"></a>组成员操作</h2><ul>
+<li><p>查看组成员</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupmems -l -g family</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改组成员</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">usermod -G family me  <span class="comment">#清空其他组成员并重设为me</span></span><br><span class="line">groupmems -a me -g family  <span class="comment">#在原有组里添加组成员</span></span><br><span class="line">usermod -aG family me  <span class="comment">#同上</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除组成员</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod -G <span class="string">''</span> me  <span class="comment">#清空用户附加组</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="文本工具"><a href="#文本工具" class="headerlink" title="文本工具"></a>文本工具</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">cat -n file  <span class="comment">#显示行号</span></span><br><span class="line">cat -sn file  <span class="comment">#显示行号并压缩多个空行为一行</span></span><br><span class="line">cat -b file  <span class="comment">#显示行号，但忽略空行的行号</span></span><br><span class="line">cat -E file  <span class="comment">#以字符方式显示出换行</span></span><br><span class="line">cat -A file  <span class="comment">#以字符方式显示出换行和TAB</span></span><br><span class="line">tac file  <span class="comment">#反向显示</span></span><br><span class="line">rev file  <span class="comment">#行内反向显示</span></span><br><span class="line">more file  <span class="comment">#分页显示</span></span><br><span class="line">less file  <span class="comment">#同上，可支持上下翻页显示</span></span><br><span class="line">head</span><br><span class="line">tail -f f1  <span class="comment">#跟踪文件变化，跟踪的是文件描述符，文件删除后不再跟踪</span></span><br><span class="line">tail -F f1  <span class="comment">#跟踪的是文件名，文件删除再创建会继续跟踪文件的变化</span></span><br><span class="line">cut -d: -f1,3,5-7 /etc/passwd  <span class="comment">#以冒号为分隔符取第1列，第3列和第5到第7列</span></span><br><span class="line">paste -d<span class="string">':'</span> f1 f2  <span class="comment">#纵向合并文本，并以冒号作为分隔符</span></span><br><span class="line">paste -s f1  <span class="comment">#所有行合并为一行</span></span><br><span class="line">wc file  <span class="comment">#word count，统计单词数量</span></span><br><span class="line">wc -l file  <span class="comment">#只统计行数</span></span><br><span class="line">wc -w file  <span class="comment">#只统计单词数量</span></span><br><span class="line">wc -c file  <span class="comment">#只统计字节数</span></span><br><span class="line">wc -L f4  <span class="comment">#只统计最长的行</span></span><br></pre></td></tr></table></figure>
+<h2 id="文本生成工具"><a href="#文本生成工具" class="headerlink" title="文本生成工具"></a>文本生成工具</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">seq 1 10  <span class="comment">#生成1到10的序列</span></span><br></pre></td></tr></table></figure>
+<h2 id="网络工具"><a href="#网络工具" class="headerlink" title="网络工具"></a>网络工具</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ss -tn  <span class="comment">#查看当前连接数</span></span><br></pre></td></tr></table></figure>
+<p>从终端上传文件到服务器<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rz</span><br></pre></td></tr></table></figure></p>
+<h1 id="安装文件"><a href="#安装文件" class="headerlink" title="安装文件"></a>安装文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh /安装路径/</span><br></pre></td></tr></table></figure>
+<h1 id="查看内部命令的帮助"><a href="#查看内部命令的帮助" class="headerlink" title="查看内部命令的帮助"></a>查看内部命令的帮助</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">help</span> 内部命令列表</span><br><span class="line"><span class="built_in">enable</span> cmd 启用内部命令</span><br><span class="line"><span class="built_in">enable</span> -n cmd禁用内部命令</span><br><span class="line"><span class="built_in">enable</span> -n 查看所有禁用的内部命令</span><br></pre></td></tr></table></figure>
 <p>执行<code>help</code>命令会直接显示内部命令的列表，禁用的命令前会用<code>*</code>表示出来</p>
 <p>判断是外部命令还是内部命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span> 命令名称</span><br></pre></td></tr></table></figure></p>
 <p>-a 列出所有内部命令和外部命令列表</p>
@@ -467,8 +532,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -487,7 +561,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -498,7 +572,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -509,7 +583,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -532,6 +606,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境变量"><span class="nav-number">1.</span> <span class="nav-text">环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置文件"><span class="nav-number">2.</span> <span class="nav-text">配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用户操作"><span class="nav-number">3.</span> <span class="nav-text">用户操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组操作"><span class="nav-number">4.</span> <span class="nav-text">组操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组成员操作"><span class="nav-number">5.</span> <span class="nav-text">组成员操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本工具"><span class="nav-number">6.</span> <span class="nav-text">文本工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本生成工具"><span class="nav-number">7.</span> <span class="nav-text">文本生成工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络工具"><span class="nav-number">8.</span> <span class="nav-text">网络工具</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装文件"><span class="nav-number"></span> <span class="nav-text">安装文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看内部命令的帮助"><span class="nav-number"></span> <span class="nav-text">查看内部命令的帮助</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

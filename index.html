@@ -259,6 +259,171 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/23/VMWareFusion网络设置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="朱俊成">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="朱俊成的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/23/VMWareFusion网络设置/" itemprop="url">VMWare Fusion 网络设置</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-23T17:18:49+08:00">
+                2018-10-23 17:18:49
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/虚拟机/" itemprop="url" rel="index">
+                    <span itemprop="name">虚拟机</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/虚拟机/VMWare-Fusion-网络设置/" itemprop="url" rel="index">
+                    <span itemprop="name">VMWare Fusion 网络设置</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/10/23/VMWareFusion网络设置/" class="leancloud_visitors" data-flag-title="VMWare Fusion 网络设置">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>VMWare Fusion 配置文件所在目录<code>/Library/Preferences/VMware Fusion/</code><br>当增加vmnet2网卡时<br><img src="images/vm/vmware_fusion/add_vm2.png" alt=""><br>VMWare Fusion会在<code>networking</code>文件中增加相应字段<br><img src="images/vm/vmware_fusion/networking.png" alt=""><br>运行命令<code>sudo /Applications/VMware\ Fusion.app/Contents/Library/vmnet-cli --configure</code>，VMWare Fusion 会根据网络配置文件<code>networking</code>生成相应的虚拟网卡配置文件(在vmnet*下)<br><img src="images/vm/vmware_fusion/configure.png" alt=""></p>
+<p>禁用虚拟网卡<br><code>sudo /Applications/VMware\ Fusion.app/Contents/Library/vmnet-cli --stop</code><br>开启虚拟网卡<br><code>sudo /Applications/VMware\ Fusion.app/Contents/Library/vmnet-cli --start</code></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/02/linux学习笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -363,8 +528,11 @@
       
         
           
-            <h2 id="第5天"><a href="#第5天" class="headerlink" title="第5天"></a>第5天</h2><h3 id="2-用户和组配置文件"><a href="#2-用户和组配置文件" class="headerlink" title="2.用户和组配置文件"></a>2.用户和组配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">id</span><br><span class="line">id -u wang</span><br><span class="line">file /etc/passwd</span><br><span class="line">pwunconv</span><br><span class="line">pwconv  <span class="comment">#password convert</span></span><br><span class="line">chfn  <span class="comment">#change finger</span></span><br><span class="line">rpm -ivh /run/media/root/CentOS/Packages/finger</span><br><span class="line">finger wang</span><br><span class="line">chsh -s /sbin/nologin</span><br><span class="line">getent passwd wang mage  <span class="comment">#get entries</span></span><br><span class="line">grub-md5-crypt  <span class="comment">#生成一个md5加密过的口令(CentOS6命令)</span></span><br><span class="line"><span class="built_in">echo</span> `date +%s`/3600/24 | bc  <span class="comment">#1970年至今过了多少天</span></span><br><span class="line">date -s <span class="string">'+3 day'</span>  <span class="comment">#把系统时间改成3天后</span></span><br><span class="line">chage -l  <span class="comment">#change user password expiry information</span></span><br><span class="line">chage -d0 mage  <span class="comment">#设置密码过期，必须更改</span></span><br><span class="line">cat /etc/login.defs  <span class="comment">#查看密码加密算法</span></span><br><span class="line">authconfig --passalgo=sha256 --update  <span class="comment">#shadow文件里的$6$会变成$5$</span></span><br><span class="line">openssl rand -base64 12  <span class="comment">#生成随机口令</span></span><br></pre></td></tr></table></figure>
-<h3 id="3-用户管理命令"><a href="#3-用户管理命令" class="headerlink" title="3.用户管理命令"></a>3.用户管理命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">groupmems -a zjc -g root  <span class="comment">#把用户zjc加入到root组里</span></span><br><span class="line">groupmems -d zjc -g root  <span class="comment">#从root组里删除用户zjc</span></span><br></pre></td></tr></table></figure>
+            <h2 id="第5天"><a href="#第5天" class="headerlink" title="第5天"></a>第5天</h2><h3 id="2-用户和组配置文件"><a href="#2-用户和组配置文件" class="headerlink" title="2.用户和组配置文件"></a>2.用户和组配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">id</span><br><span class="line">id -u wang</span><br><span class="line">file /etc/passwd</span><br><span class="line">pwunconv</span><br><span class="line">pwconv  <span class="comment">#password convert</span></span><br><span class="line">chfn  <span class="comment">#change finger</span></span><br><span class="line">rpm -ivh /run/media/root/CentOS/Packages/finger</span><br><span class="line">finger wang</span><br><span class="line">chsh -s /sbin/nologin</span><br><span class="line">getent passwd wang mage  <span class="comment">#get entries</span></span><br><span class="line">grub-md5-crypt  <span class="comment">#生成一个md5加密过的口令(CentOS6命令)</span></span><br><span class="line"><span class="built_in">echo</span> `date +%s`/3600/24 | bc  <span class="comment">#1970年至今过了多少天</span></span><br><span class="line">date -s <span class="string">'+3 day'</span>  <span class="comment">#把系统时间改成3天后</span></span><br><span class="line">chage -l  <span class="comment">#change user password expiry information</span></span><br><span class="line">chage -d0 mage  <span class="comment">#设置密码过期，必须更改</span></span><br><span class="line">cat /etc/login.defs  <span class="comment">#ENCRYPT_METHOD 查看口令加密算法</span></span><br><span class="line">authconfig --passalgo=sha256 --update  <span class="comment">#shadow文件里的$6$会变成$5$</span></span><br><span class="line">openssl rand -base64 12  <span class="comment">#生成随机口令</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-用户管理命令"><a href="#3-用户管理命令" class="headerlink" title="3.用户管理命令"></a>3.用户管理命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">getent group root zjc</span><br><span class="line">gpasswd zjc  <span class="comment">#给组zjc加上组密码</span></span><br><span class="line">groupmems -a zjc -g root  <span class="comment">#把用户zjc加入到root组里</span></span><br><span class="line">gpasswd -a zjc root  <span class="comment">#同上</span></span><br><span class="line">groupmems -d zjc -g root  <span class="comment">#从root组里删除用户zjc</span></span><br><span class="line">newgrp mage  <span class="comment">#临时切换主组，用exit退出上下文后，会还原到加入前的主组</span></span><br><span class="line">gpasswd -r mage  <span class="comment">#清除mage组口令</span></span><br><span class="line">vipw</span><br><span class="line">vigr</span><br><span class="line">pwck</span><br><span class="line">grpck</span><br><span class="line">usermod -L mage  <span class="comment">#锁定帐户</span></span><br><span class="line">usermod -U mage  <span class="comment">#解锁帐户</span></span><br><span class="line">/etc/login.defs</span><br><span class="line"><span class="comment">#PASS_MAX_DAYS  更改用户口令最长有效期</span></span><br><span class="line"><span class="comment">#CREATE_HOME   默认是否创建家目录</span></span><br><span class="line"><span class="comment">#UID_MIN UID_MAX  uid范围</span></span><br><span class="line"><span class="comment">#SYS_UID_MIN SYS_UID_MAX  系统uid范围</span></span><br><span class="line">useradd -u 800 li  <span class="comment">#指定新建帐户的uid</span></span><br><span class="line">useradd -u 800 -o laoli  <span class="comment">#创建和同一个uid相同的帐户</span></span><br><span class="line">useradd -d /data/hudir hu  <span class="comment">#创建指定家目录位置的帐户</span></span><br><span class="line">useradd -r app2 -s /sbin/nologin  <span class="comment">#创建系统帐户并指定shell类型，系统帐户不会创建家目录</span></span><br><span class="line">useradd -r -m app5  <span class="comment">#强制系统帐户创建家目录</span></span><br><span class="line">useradd -M app6  <span class="comment">#强制不建立家目录</span></span><br><span class="line">useradd -c <span class="string">'web user'</span> -r -s /sbin/nologin webuser  <span class="comment">#创建一个带描述的不能登录的系统帐户</span></span><br><span class="line">useradd -g app app3  <span class="comment">#创建帐户时指定一个已存在的组作为主组</span></span><br><span class="line">useradd -g bin -G wang,mage,alice test2  <span class="comment">#创建主组为bin,附加组为wang,mage,alice的test2帐户</span></span><br><span class="line">useradd -N zhang  <span class="comment">#创建帐户时不创建相应的组，而是加入到默认的user组里</span></span><br><span class="line">/etc/default/useradd  <span class="comment">#创建用户默认行为的配置文件</span></span><br><span class="line"><span class="comment"># useradd defaults file</span></span><br><span class="line"><span class="comment">#GROUP=100  默认的user组，gid是100</span></span><br><span class="line"><span class="comment">#HOME=/home  家目录</span></span><br><span class="line"><span class="comment">#INACTIVE=-1  口令过期后是否把用户锁定，-1表示永不锁定</span></span><br><span class="line"><span class="comment">#EXPIRE=  口令有效期为空表示永久有效</span></span><br><span class="line"><span class="comment">#SHELL=/bin/bash  默认bash</span></span><br><span class="line"><span class="comment">#SKEL=/etc/skel  默认家目录模板文件</span></span><br><span class="line"><span class="comment">#CREATE_MAIL_SPOOL=yes</span></span><br><span class="line">cp -r /etc/skel/.[^.]*  /etc/skel/*  /home/<span class="built_in">test</span>  <span class="comment">#同时复制目录下的隐藏文件和非隐藏文件</span></span><br><span class="line">cp -r /etc/skel  /home  <span class="comment">#同上</span></span><br><span class="line">groups test2  <span class="comment">#查看帐户有哪些组</span></span><br></pre></td></tr></table></figure>
+<h3 id="5-文件的权限管理"><a href="#5-文件的权限管理" class="headerlink" title="5.文件的权限管理"></a>5.文件的权限管理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">usermod -aG root wang  <span class="comment">#wang加入到root组里</span></span><br><span class="line">usermod -G <span class="string">''</span> wang  <span class="comment">#清空附加组</span></span><br><span class="line">chown  <span class="comment">#更改所有者</span></span><br><span class="line">chmod -R a+x dir/  <span class="comment">#把dir目录下的文件全部加上执行权限</span></span><br><span class="line">chmod -R a+X dir/  <span class="comment">#把dir目录下的目录全部加上执行权限</span></span><br><span class="line">chmod --reference f2 f1  <span class="comment">#把f1设置成和f2一样的权限</span></span><br><span class="line">chgrp zjc f1  <span class="comment">#把f1所属组更改成zjc</span></span><br><span class="line">chown zjc.root f2  <span class="comment">#同时更改f2文件的所有者为zjc，所属组为root</span></span><br><span class="line">chown zjc:root f2</span><br><span class="line">chown zjc. f2  <span class="comment">#把f2文件的所有者和所属组都改为zjc</span></span><br><span class="line">chown .root f2  <span class="comment">#只改所属组</span></span><br></pre></td></tr></table></figure>
+<h2 id="第6天"><a href="#第6天" class="headerlink" title="第6天"></a>第6天</h2><h3 id="1-默认权限um-95067b55-57c7-40df-9810-74fdc8b32a6b-ask和特殊权限"><a href="#1-默认权限um-95067b55-57c7-40df-9810-74fdc8b32a6b-ask和特殊权限" class="headerlink" title="1.默认权限um{95067b55-57c7-40df-9810-74fdc8b32a6b}ask和特殊权限"></a>1.默认权限um{95067b55-57c7-40df-9810-74fdc8b32a6b}ask和特殊权限</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">umask</span>  <span class="comment">#在.bashrc中设置umask</span></span><br><span class="line"><span class="built_in">umask</span> -S</span><br><span class="line"><span class="built_in">umask</span> -p &gt;&gt; ~wang/.bashrc  <span class="comment">#把当前帐户umask值追加到wang帐户中</span></span><br><span class="line"><span class="comment"># setuid suid</span></span><br><span class="line">chmod u+s /bin/cat</span><br><span class="line"><span class="comment">#sticky 1 sgid 2 suid 4</span></span><br><span class="line"><span class="comment">#sticky权限表示只能删除自己创建的文件，如在/tmp文件里创建的文件</span></span><br><span class="line">chmod 2755  <span class="comment">#结果rwxr-sr-x</span></span><br><span class="line">chmod 1777  <span class="comment">#结果drwxrwxrwt</span></span><br><span class="line">chattr +i f1  <span class="comment">#锁定文件</span></span><br><span class="line">chattr +a f1  <span class="comment">#锁定文件，但能追加内容</span></span><br><span class="line">lsattr  <span class="comment">#查看扩展属性</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-ACL和文本处理工具"><a href="#2-ACL和文本处理工具" class="headerlink" title="2.ACL和文本处理工具"></a>2.ACL和文本处理工具</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#对用户设权限</span></span><br><span class="line">setfacl -m u:wang:- f1  <span class="comment">#设定wang帐号的acl权限为空，不能访问任何文件</span></span><br><span class="line">getfacl f1  <span class="comment">#查询是否设定了acl权限</span></span><br><span class="line"><span class="comment">#对组设权限</span></span><br><span class="line">setfacl -m g:webs:rw f1</span><br><span class="line"><span class="comment">#清除acl权限</span></span><br><span class="line">setfacl -R u:wang:rwx dir/  <span class="comment">#对目录递归设置权限</span></span><br><span class="line">setfacl -R -b  <span class="comment">#清空acl权限</span></span><br><span class="line">setfacl -R -m d:u:wang:rwx dir  <span class="comment">#default，新建文件时默认就有acl权限</span></span><br><span class="line">setfacl -m mask::r f1  <span class="comment">#给acl权限设定一个上限</span></span><br><span class="line">chmod g=r f1  <span class="comment">#同上，因为设置加了acl权限文件的组权限就等于设置acl权限</span></span><br><span class="line">setfacl -k dir  <span class="comment">#删除默认acl权限</span></span><br><span class="line">getfacl file1 | setfacl --<span class="built_in">set</span>-file=- file2  <span class="comment">#复制file1的acl权限给file2，`-`表示管道前面结果的标准输出</span></span><br><span class="line">setfacl --<span class="built_in">set</span> u:zhang:rw f1  <span class="comment">#清空原有acl设置，并重新设置为当前值</span></span><br><span class="line">tune2fs -l /dev/sda1  <span class="comment">#查看当前分区是否支持acl，centos6手动加上的分区默认没有acl，此命令只支持ext系统文件格式</span></span><br></pre></td></tr></table></figure>
           
         
       
@@ -680,9 +848,74 @@
       
         
           
-            <p>从终端上传文件到服务器<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rz</span><br></pre></td></tr></table></figure></p>
-<p>安装文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh /安装路径/</span><br></pre></td></tr></table></figure></p>
-<p>查看内部命令的帮助<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">help</span> 内部命令列表</span><br><span class="line"><span class="built_in">enable</span> cmd 启用内部命令</span><br><span class="line"><span class="built_in">enable</span> -n cmd禁用内部命令</span><br><span class="line"><span class="built_in">enable</span> -n 查看所有禁用的内部命令</span><br></pre></td></tr></table></figure></p>
+            <h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><p><code>$SHELL</code>  当前使用的shell<br><code>$PS1</code>  命令提示符prompt  <a href="2018/09/30/更改echo命令输出的字符串颜色/">提示符颜色修改</a></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\e \033</td>
+<td>\u 当前用户</td>
+</tr>
+<tr>
+<td>\h 主机名称简称</td>
+<td>\H 主机名</td>
+</tr>
+<tr>
+<td>\w 当前工作目录</td>
+<td>\W 当前工作目录基名</td>
+</tr>
+<tr>
+<td>\t 24小时时间格式</td>
+<td>\T 12小时时间格式</td>
+</tr>
+<tr>
+<td>! 命令历史数</td>
+<td># 开机后命令历史数</td>
+</tr>
+</tbody>
+</table>
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p><code>/etc/shells</code>  #当前系统使用的所有shell</p>
+<h2 id="用户操作"><a href="#用户操作" class="headerlink" title="用户操作"></a>用户操作</h2><ul>
+<li><p>创建用户</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd me</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除用户</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">userdel -r me  <span class="comment">#省略-r则表示不删除家目录和邮件目录</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看用户所属组</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id me  <span class="comment">#省略用户名则表示当前用户</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="组操作"><a href="#组操作" class="headerlink" title="组操作"></a>组操作</h2><ul>
+<li><p>创建组</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd family</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除组</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupdel family</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="组成员操作"><a href="#组成员操作" class="headerlink" title="组成员操作"></a>组成员操作</h2><ul>
+<li><p>查看组成员</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupmems -l -g family</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改组成员</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">usermod -G family me  <span class="comment">#清空其他组成员并重设为me</span></span><br><span class="line">groupmems -a me -g family  <span class="comment">#在原有组里添加组成员</span></span><br><span class="line">usermod -aG family me  <span class="comment">#同上</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除组成员</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod -G <span class="string">''</span> me  <span class="comment">#清空用户附加组</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="文本工具"><a href="#文本工具" class="headerlink" title="文本工具"></a>文本工具</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">cat -n file  <span class="comment">#显示行号</span></span><br><span class="line">cat -sn file  <span class="comment">#显示行号并压缩多个空行为一行</span></span><br><span class="line">cat -b file  <span class="comment">#显示行号，但忽略空行的行号</span></span><br><span class="line">cat -E file  <span class="comment">#以字符方式显示出换行</span></span><br><span class="line">cat -A file  <span class="comment">#以字符方式显示出换行和TAB</span></span><br><span class="line">tac file  <span class="comment">#反向显示</span></span><br><span class="line">rev file  <span class="comment">#行内反向显示</span></span><br><span class="line">more file  <span class="comment">#分页显示</span></span><br><span class="line">less file  <span class="comment">#同上，可支持上下翻页显示</span></span><br><span class="line">head</span><br><span class="line">tail -f f1  <span class="comment">#跟踪文件变化，跟踪的是文件描述符，文件删除后不再跟踪</span></span><br><span class="line">tail -F f1  <span class="comment">#跟踪的是文件名，文件删除再创建会继续跟踪文件的变化</span></span><br><span class="line">cut -d: -f1,3,5-7 /etc/passwd  <span class="comment">#以冒号为分隔符取第1列，第3列和第5到第7列</span></span><br><span class="line">paste -d<span class="string">':'</span> f1 f2  <span class="comment">#纵向合并文本，并以冒号作为分隔符</span></span><br><span class="line">paste -s f1  <span class="comment">#所有行合并为一行</span></span><br><span class="line">wc file  <span class="comment">#word count，统计单词数量</span></span><br><span class="line">wc -l file  <span class="comment">#只统计行数</span></span><br><span class="line">wc -w file  <span class="comment">#只统计单词数量</span></span><br><span class="line">wc -c file  <span class="comment">#只统计字节数</span></span><br><span class="line">wc -L f4  <span class="comment">#只统计最长的行</span></span><br></pre></td></tr></table></figure>
+<h2 id="文本生成工具"><a href="#文本生成工具" class="headerlink" title="文本生成工具"></a>文本生成工具</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">seq 1 10  <span class="comment">#生成1到10的序列</span></span><br></pre></td></tr></table></figure>
+<h2 id="网络工具"><a href="#网络工具" class="headerlink" title="网络工具"></a>网络工具</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ss -tn  <span class="comment">#查看当前连接数</span></span><br></pre></td></tr></table></figure>
+<p>从终端上传文件到服务器<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rz</span><br></pre></td></tr></table></figure></p>
+<h1 id="安装文件"><a href="#安装文件" class="headerlink" title="安装文件"></a>安装文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh /安装路径/</span><br></pre></td></tr></table></figure>
+<h1 id="查看内部命令的帮助"><a href="#查看内部命令的帮助" class="headerlink" title="查看内部命令的帮助"></a>查看内部命令的帮助</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">help</span> 内部命令列表</span><br><span class="line"><span class="built_in">enable</span> cmd 启用内部命令</span><br><span class="line"><span class="built_in">enable</span> -n cmd禁用内部命令</span><br><span class="line"><span class="built_in">enable</span> -n 查看所有禁用的内部命令</span><br></pre></td></tr></table></figure>
 <p>执行<code>help</code>命令会直接显示内部命令的列表，禁用的命令前会用<code>*</code>表示出来</p>
 <p>判断是外部命令还是内部命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span> 命令名称</span><br></pre></td></tr></table></figure></p>
 <p>-a 列出所有内部命令和外部命令列表</p>
@@ -1710,171 +1943,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/30/使用Hexo搭建博客/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="朱俊成">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="朱俊成的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/30/使用Hexo搭建博客/" itemprop="url">使用Hexo搭建博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-30T15:08:26+08:00">
-                2018-09-30 15:08:26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/09/30/使用Hexo搭建博客/" class="leancloud_visitors" data-flag-title="使用Hexo搭建博客">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="1-安装nodejs"><a href="#1-安装nodejs" class="headerlink" title="1. 安装nodejs"></a>1. 安装nodejs</h2><p><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">nodejs下载地址</a></p>
-<h2 id="2-安装hexo-cli"><a href="#2-安装hexo-cli" class="headerlink" title="2. 安装hexo-cli"></a>2. 安装hexo-cli</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<h2 id="3-创建并初始化myBlog目录"><a href="#3-创建并初始化myBlog目录" class="headerlink" title="3. 创建并初始化myBlog目录"></a>3. 创建并初始化myBlog目录</h2><p>hexo init myBlog  </p>
-<h2 id="4-启动本地服务器"><a href="#4-启动本地服务器" class="headerlink" title="4. 启动本地服务器"></a>4. 启动本地服务器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<h2 id="5-浏览创建好的博客"><a href="#5-浏览创建好的博客" class="headerlink" title="5. 浏览创建好的博客"></a>5. 浏览创建好的博客</h2><p>在浏览器中输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a><br>按<code>ctrl</code>+<code>c</code>终止本地服务器</p>
-<h2 id="6-配置博客"><a href="#6-配置博客" class="headerlink" title="6. 配置博客"></a>6. 配置博客</h2><p>编辑<code>_config.yml</code>，按照下列配置修改<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">朱俊成的博客</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">朱俊成</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-Hans</span></span><br></pre></td></tr></table></figure></p>
-<p><code>title</code> 博客标题<br><code>author</code> 博客作者<br><code>language</code> 博客内容所用的语言  </p>
-<p>接下来配置一款漂亮的主题<a href="http://theme-next.iissnan.com" target="_blank" rel="noopener">NexT</a><br>首先进入你的博客目录，然后下载NexT主题<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;你的博客目录名&gt;</span><br><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
-<p>修改<code>theme: landscape</code>为<code>theme: next</code><br>再次通过<code>hexo server</code>启动本地服务器，在浏览器里即可看到效果。  </p>
-<p>更详细的配置信息请参考官方文档<br><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo官方文档</a><br><a href="http://theme-next.iissnan.com" target="_blank" rel="noopener">NexT官方文档</a><br><a href="https://github.com/iissnan/hexo-theme-next/wiki/创建分类页面" target="_blank" rel="noopener">创建分类页面</a><br><a href="https://git-scm.com/book/zh/v1/起步-初次运行-Git-前的配置" target="_blank" rel="noopener">初次运行 Git 前的配置</a><br><a href="https://git-scm.com/book/zh/v1/服务器上的-Git-生成-SSH-公钥" target="_blank" rel="noopener">服务器上的 Git - 生成 SSH 公钥</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1922,7 +1997,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1933,7 +2008,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1944,7 +2019,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
